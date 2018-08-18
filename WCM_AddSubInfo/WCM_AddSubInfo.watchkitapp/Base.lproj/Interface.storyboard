@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jtN-zh-kJX">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="u3p-jp-5qg">
+            <objects>
+                <controller id="jtN-zh-kJX" customClass="InterfaceController" customModule="WCM_AddSubInfo_watchkitapp_Extension">
+                    <items>
+                        <label width="1" height="0.59999999999999998" alignment="center" text="Label0" textAlignment="left" numberOfLines="10" id="7N4-hP-3rQ">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="10"/>
+                        </label>
+                        <group width="1" height="0.20000000000000001" alignment="center" id="xkl-6V-MDs">
+                            <items>
+                                <button width="0.5" height="1" alignment="center" title="UserInfo" id="dBu-hq-smJ">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="userInfoButton" destination="jtN-zh-kJX" id="xF5-O8-8Xe"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="center" title="Apl Context" id="4fy-Hi-8cC">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="aplContextButton" destination="jtN-zh-kJX" id="RWa-XO-g4d"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="center" id="hIP-JJ-72m">
+                            <items>
+                                <button width="0.5" height="1" alignment="center" title="Send Message" id="5PL-i9-rko">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="interactiveLButton" destination="jtN-zh-kJX" id="Dzt-WC-Qd7"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="center" title="File Transfer" id="PLx-8j-eIz">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="filetTansferButton" destination="jtN-zh-kJX" id="oqJ-wF-q4j"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="7N4-hP-3rQ" id="Eir-mK-cBK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="68" y="45"/>
+        </scene>
+    </scenes>
+</document>

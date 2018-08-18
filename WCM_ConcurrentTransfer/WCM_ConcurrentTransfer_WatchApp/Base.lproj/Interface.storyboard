@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ONd-5A-gAB">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="WMh-pb-UL7">
+            <objects>
+                <controller identifier="Interface Controller" id="ONd-5A-gAB" customClass="InterfaceController" customModule="WatchConnectMgr03_WatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.29999999999999999" alignment="left" id="C2h-lo-xgl">
+                            <items>
+                                <imageView width="0.29999999999999999" height="1" alignment="left" image="CatsX90-12" contentMode="scaleAspectFit" id="T9O-6M-IdM"/>
+                                <label width="0.69999999999999996" height="1" alignment="center" text="Random Text" textAlignment="center" numberOfLines="3" id="Y4Z-YK-aZh">
+                                    <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" height="0.10000000000000001" alignment="center" verticalAlignment="center" text="Random File" textAlignment="center" numberOfLines="3" id="WC7-G3-kuW">
+                            <fontDescription key="font" type="system" weight="light" pointSize="8"/>
+                        </label>
+                        <label width="1" height="0.0" alignment="center" verticalAlignment="center" text="00:00" textAlignment="center" id="qzo-QX-huO">
+                            <fontDescription key="font" type="system" weight="light" pointSize="9"/>
+                        </label>
+                        <group width="1" height="0.29999999999999999" alignment="center" verticalAlignment="center" id="4J3-tu-Hlq">
+                            <items>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="99" textAlignment="center" id="JEZ-8D-F2u">
+                                    <fontDescription key="font" type="system" pointSize="50"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="center" verticalAlignment="center" id="D1U-zo-M26">
+                            <items>
+                                <button width="0.25" height="1" alignment="center" verticalAlignment="center" title="-" id="hIY-Qk-HTB">
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="38"/>
+                                    <connections>
+                                        <action selector="minusButtonAct" destination="ONd-5A-gAB" id="Nqu-pb-BNQ"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" verticalAlignment="center" title="RST" id="4Lj-TC-BwQ">
+                                    <color key="backgroundColor" red="0.74313876300000004" green="0.33708091299999998" blue="0.38641784470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                    <connections>
+                                        <action selector="resetButtonAct" destination="ONd-5A-gAB" id="lKk-6y-S7N"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" verticalAlignment="center" title="RND" id="Um4-Xo-lJd">
+                                    <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="9"/>
+                                    <connections>
+                                        <action selector="randomButtonAct" destination="ONd-5A-gAB" id="iWz-Ch-csT"/>
+                                    </connections>
+                                </button>
+                                <button width="0.25" height="1" alignment="center" verticalAlignment="center" title="+" id="Olt-of-PaV">
+                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="font" type="system" pointSize="38"/>
+                                    <connections>
+                                        <action selector="plusButtonAct" destination="ONd-5A-gAB" id="gVj-4Z-M5S"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="RNDTextLabel" destination="Y4Z-YK-aZh" id="kpD-WW-sO8"/>
+                        <outlet property="fileLabel" destination="WC7-G3-kuW" id="m26-gU-3rO"/>
+                        <outlet property="imageView" destination="T9O-6M-IdM" id="EB9-NN-fgO"/>
+                        <outlet property="minusButton" destination="hIY-Qk-HTB" id="LxZ-6n-xdi"/>
+                        <outlet property="numLabel" destination="JEZ-8D-F2u" id="JTq-cN-b1y"/>
+                        <outlet property="plusButton" destination="Olt-of-PaV" id="JWq-3p-Vym"/>
+                        <outlet property="randomButton" destination="Um4-Xo-lJd" id="JxJ-XJ-SwI"/>
+                        <outlet property="resetButton" destination="4Lj-TC-BwQ" id="lCZ-HI-wM2"/>
+                        <outlet property="timerLabel" destination="qzo-QX-huO" id="5Cc-xi-Pcn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="57"/>
+        </scene>
+    </scenes>
+</document>

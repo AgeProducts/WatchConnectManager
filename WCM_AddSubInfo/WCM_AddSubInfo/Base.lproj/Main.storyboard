@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LdY-bo-jsj">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="QHd-Fw-22K">
+            <objects>
+                <viewController id="LdY-bo-jsj" customClass="ViewController" customModule="WCM_AddSubInfo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hs8-OF-LuF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UtG-df-S1h">
+                                <rect key="frame" x="27" y="671" width="360" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHq-eW-Mbv">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Pjl-Z7-S4e"/>
+                                        </constraints>
+                                        <state key="normal" title="SendMessage"/>
+                                        <connections>
+                                            <action selector="interactiveLongButtonAct:" destination="LdY-bo-jsj" eventType="touchUpInside" id="vPz-KZ-664"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="see-Zw-4hM" userLabel="interactLong">
+                                        <rect key="frame" x="180" y="0.0" width="180" height="45"/>
+                                        <state key="normal" title="FileTransfer"/>
+                                        <connections>
+                                            <action selector="filetTansferButtonAct:" destination="LdY-bo-jsj" eventType="touchUpInside" id="OR3-Yk-VXu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="see-Zw-4hM" firstAttribute="width" secondItem="sHq-eW-Mbv" secondAttribute="width" id="bXJ-Je-2GP"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyH-QY-Oju">
+                                <rect key="frame" x="27" y="618" width="360" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gD-2B-2Kl">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="a59-gn-MKK"/>
+                                        </constraints>
+                                        <state key="normal" title="UserInfo"/>
+                                        <connections>
+                                            <action selector="userInfoButtonAct:" destination="LdY-bo-jsj" eventType="touchUpInside" id="OIe-4B-fR7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgL-TJ-Tcv">
+                                        <rect key="frame" x="180" y="0.0" width="180" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="KpB-sJ-4sp"/>
+                                        </constraints>
+                                        <state key="normal" title="AplContext"/>
+                                        <connections>
+                                            <action selector="aplContextButtonAct:" destination="LdY-bo-jsj" eventType="touchUpInside" id="o9X-HC-X3t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qgL-TJ-Tcv" firstAttribute="width" secondItem="3gD-2B-2Kl" secondAttribute="width" id="7Jk-U5-iqv"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PeX-KV-E9U">
+                                <rect key="frame" x="20" y="20" width="374" height="590"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PeX-KV-E9U" firstAttribute="centerX" secondItem="Hs8-OF-LuF" secondAttribute="centerX" id="14c-gc-Tqx"/>
+                            <constraint firstItem="UtG-df-S1h" firstAttribute="leading" secondItem="LgE-rK-65D" secondAttribute="leading" constant="27" id="P2J-Rv-VDg"/>
+                            <constraint firstItem="LgE-rK-65D" firstAttribute="trailing" secondItem="PeX-KV-E9U" secondAttribute="trailing" constant="20" id="RVR-a6-dDn"/>
+                            <constraint firstItem="kyH-QY-Oju" firstAttribute="leading" secondItem="LgE-rK-65D" secondAttribute="leading" constant="27" id="Xbd-j2-rjV"/>
+                            <constraint firstItem="LgE-rK-65D" firstAttribute="trailing" secondItem="kyH-QY-Oju" secondAttribute="trailing" constant="27" id="Y0t-DA-FuH"/>
+                            <constraint firstItem="LgE-rK-65D" firstAttribute="trailing" secondItem="UtG-df-S1h" secondAttribute="trailing" constant="27" id="bVz-Y7-M3V"/>
+                            <constraint firstItem="PeX-KV-E9U" firstAttribute="leading" secondItem="LgE-rK-65D" secondAttribute="leading" constant="20" id="kOp-ll-H2h"/>
+                            <constraint firstItem="PeX-KV-E9U" firstAttribute="top" secondItem="LgE-rK-65D" secondAttribute="top" id="nTo-fa-cWN"/>
+                            <constraint firstItem="LgE-rK-65D" firstAttribute="bottom" secondItem="UtG-df-S1h" secondAttribute="bottom" constant="20" id="oQG-4e-vYq"/>
+                            <constraint firstItem="kyH-QY-Oju" firstAttribute="top" secondItem="PeX-KV-E9U" secondAttribute="bottom" constant="8" id="qME-GN-nDq"/>
+                            <constraint firstItem="UtG-df-S1h" firstAttribute="top" secondItem="kyH-QY-Oju" secondAttribute="bottom" constant="8" id="rgj-bV-55j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LgE-rK-65D"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="PeX-KV-E9U" id="Rj1-BJ-MmJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9P-fs-q1x" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="817.66304347826099"/>
+        </scene>
+    </scenes>
+</document>

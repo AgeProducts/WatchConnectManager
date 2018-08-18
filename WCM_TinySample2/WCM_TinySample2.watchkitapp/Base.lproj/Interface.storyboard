@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LYG-dw-Np4">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="Xfx-iK-PUp">
+            <objects>
+                <controller id="LYG-dw-Np4" customClass="InterfaceController" customModule="WCM_TinySample2_watchkitapp_Extension">
+                    <items>
+                        <label width="1" height="0.40000000000000002" alignment="left" text="Message" textAlignment="center" numberOfLines="6" id="goc-O6-5bp"/>
+                        <button width="1" alignment="left" title="Send Message" id="djv-7A-ug8">
+                            <connections>
+                                <action selector="sendMassageButton" destination="LYG-dw-Np4" id="n8g-Vv-Ox1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Send image F" id="qSS-Vt-7LE">
+                            <connections>
+                                <action selector="fileTansferButton:" destination="LYG-dw-Np4" id="FMB-x9-4bm"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="goc-O6-5bp" id="Wtn-yi-y0U"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

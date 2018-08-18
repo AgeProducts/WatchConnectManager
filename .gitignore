@@ -66,3 +66,11 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
+
+####### Ignores
+README-Files
+
+WCM_Icons
+B02_WCM_ConcurrentTransferRx
+B03_WCM_TinyBG
+ZZZZZZZ

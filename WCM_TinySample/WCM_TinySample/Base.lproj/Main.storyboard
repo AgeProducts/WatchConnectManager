@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vaP-tb-Y5h">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="a56-wn-RGY">
+            <objects>
+                <viewController id="vaP-tb-Y5h" customClass="ViewController" customModule="WCM_TinySample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9eT-xl-2AS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3I-Se-NTD">
+                                <rect key="frame" x="107" y="668" width="200" height="48"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5fh-42-l8M"/>
+                                    <constraint firstAttribute="width" constant="200" id="KMh-MW-tdS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Send Image F"/>
+                                <connections>
+                                    <action selector="fileTansferButton:" destination="vaP-tb-Y5h" eventType="touchUpInside" id="FyV-An-Zm5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oJ-QX-8Le">
+                                <rect key="frame" x="107" y="572" width="200" height="48"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9fa-bJ-Pjq"/>
+                                    <constraint firstAttribute="width" constant="200" id="XP1-MW-AAh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Send Text "/>
+                                <connections>
+                                    <action selector="sendButton:" destination="vaP-tb-Y5h" eventType="touchUpInside" id="trg-eM-llO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvN-sQ-swo">
+                                <rect key="frame" x="20" y="20" width="374" height="120"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="02d-gZ-bY0"/>
+                                </constraints>
+                                <string key="text">Message
+(no use)</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CatImage00.png" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-P4-6A1">
+                                <rect key="frame" x="20" y="148" width="374" height="376"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="w3I-Se-NTD" firstAttribute="centerX" secondItem="9eT-xl-2AS" secondAttribute="centerX" id="55M-qG-cef"/>
+                            <constraint firstItem="yvN-sQ-swo" firstAttribute="leading" secondItem="zb4-AM-Tca" secondAttribute="leading" constant="20" id="Bsd-Xs-U2k"/>
+                            <constraint firstItem="2oJ-QX-8Le" firstAttribute="top" secondItem="1f6-P4-6A1" secondAttribute="bottom" constant="48" id="D6J-hG-tGK"/>
+                            <constraint firstItem="w3I-Se-NTD" firstAttribute="top" secondItem="2oJ-QX-8Le" secondAttribute="bottom" constant="48" id="E5E-AX-Bgm"/>
+                            <constraint firstItem="2oJ-QX-8Le" firstAttribute="centerX" secondItem="9eT-xl-2AS" secondAttribute="centerX" id="LLM-SL-LaU"/>
+                            <constraint firstItem="yvN-sQ-swo" firstAttribute="top" secondItem="zb4-AM-Tca" secondAttribute="top" id="NzF-Rh-jyU"/>
+                            <constraint firstItem="zb4-AM-Tca" firstAttribute="bottom" secondItem="w3I-Se-NTD" secondAttribute="bottom" constant="20" id="S0Z-N9-uAa"/>
+                            <constraint firstItem="1f6-P4-6A1" firstAttribute="leading" secondItem="zb4-AM-Tca" secondAttribute="leading" constant="20" id="SPN-6C-wqX"/>
+                            <constraint firstItem="zb4-AM-Tca" firstAttribute="trailing" secondItem="yvN-sQ-swo" secondAttribute="trailing" constant="20" id="XxJ-wC-6sm"/>
+                            <constraint firstItem="zb4-AM-Tca" firstAttribute="trailing" secondItem="1f6-P4-6A1" secondAttribute="trailing" constant="20" id="bbr-IZ-q21"/>
+                            <constraint firstItem="1f6-P4-6A1" firstAttribute="top" secondItem="yvN-sQ-swo" secondAttribute="bottom" constant="8" id="ol6-YV-Ryh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zb4-AM-Tca"/>
+                    </view>
+                    <connections>
+                        <outlet property="massageLabel" destination="yvN-sQ-swo" id="qXI-3R-qQ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCj-Sh-Hms" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="165"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CatImage00.png" width="160" height="160"/>
+    </resources>
+</document>

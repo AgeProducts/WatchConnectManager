@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WCM_TinySample_watchkitapp_Extension">
+                    <items>
+                        <label width="1" height="0.40000000000000002" alignment="left" text="Message" textAlignment="center" numberOfLines="6" id="0Jm-DX-fRf"/>
+                        <imageView height="0.5" alignment="left" image="CatImage00" contentMode="scaleAspectFit" id="PfN-kU-4F0"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageView" destination="PfN-kU-4F0" id="kgE-4V-8Xp"/>
+                        <outlet property="messageLabel" destination="0Jm-DX-fRf" id="0kZ-O8-Pq6"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
