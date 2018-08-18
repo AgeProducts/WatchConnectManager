@@ -2,8 +2,9 @@
 
 ## Overview
 
-`"Watch Connectivity framework"` management package.
-w/Singleton, and you can use multiple Delegates.
+`"Watch Connectivity framework"` management package.    
+w/Singleton, and you can use multiple Delegates.    
+
 
 **[Demo Pj: WCM_ConcurrentTransfer]**
 ![WCM_ConcurrentTransfer](./README-Files/02_WatchCntMgr02_Demo.gif)
@@ -132,19 +133,21 @@ class InterfaceController: WKInterfaceController, WatchConnectManagerDelegate {
 ```
 
 ### Considerations
+
   - The delegate method and reply handler are not generally main threads.
-  Be careful when updating the UI at the callee.
+  Be careful when updating the UI at the callee.      
   - Registration delegate is saved in HashTable (weak objects).
   If the instance is destroyed it will also be deleted from the HashTable.
-  " removeWatchConnectManagerDelegate" in deinit {} or didDeactivate () seems unnecessary.
+  " removeWatchConnectManagerDelegate" in deinit {} or didDeactivate () seems unnecessary.      
 
 ## Demo Project
+
 We prepared 5 kinds of samples. Please check the behavior and data with Break point etc.
 
-1. WCM_TinySample:        
+1. WCM_TinySample:      
 
   - Example code. It is a minimal implementation of unidirectional (iOS -> watchOS) communication.      
-  - Perform AplContext and TransferFile.      
+  - Perform AplContext and TransferFile.      
 
 2. WCM_TinySample2:      
 
@@ -159,10 +162,10 @@ We prepared 5 kinds of samples. Please check the behavior and data with Break po
 
 4. WCM_AddSubInfo:      
 
-  - A sample that sends and receives multiple data types with addInfo / subInfo.    
-  - Execute various communication methods (ApiContext, UserInfo, SendMessage (w/Reply) and FileTransfer).    
-  - Check the compatibility of the sending function and receiving method.    
-  - The data types to be exchanged are Date / String / Int / Double / NSArray / NSDictionary / Data (Small Capacity Icon Data).      
+  - A sample that sends and receives multiple data types with addInfo / subInfo.    
+  - Execute various communication methods (ApiContext, UserInfo, SendMessage (w/Reply) and FileTransfer).    
+  - Check the compatibility of the sending function and receiving method.    
+  - The data types to be exchanged are Date / String / Int / Double / NSArray / NSDictionary / Data (Small Capacity Icon Data).        
   - Please check subInfo data acquisition manner with "subInfoDecomp" in the code.      
 
 5. WCM_ConcurrentTransfer:      
