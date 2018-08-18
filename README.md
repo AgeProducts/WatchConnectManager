@@ -141,45 +141,51 @@ class InterfaceController: WKInterfaceController, WatchConnectManagerDelegate {
 ## Demo Project
 We prepared 5 kinds of samples. Please check the behavior and data with Break point etc.
 
-1. WCM_TinySample:    
-  - Example code. It is a minimal implementation of unidirectional (iOS -> watchOS) communication.    
-  - Perform AplContext and TransferFile.    
+1. WCM_TinySample:        
 
-1. WCM_TinySample2:    
+  - Example code. It is a minimal implementation of unidirectional (iOS -> watchOS) communication.      
+  - Perform AplContext and TransferFile.      
+
+2. WCM_TinySample2:      
+
   - This is the opposite direction of WCM_TinySample. Unidirectional (watchOS- > iOS) communication.    
   - Perform SendMessage (w/Reply) and TransferFile.    
   - Test of iOS background startup by SendMessage.    
 
-1. WCM_MultiViewController:    
+3. WCM_MultiViewController:      
+
   - For Multiple Delegates (MulticastDelegates) test.    
   - Perform various communication methods (AplContext / UserInfo / SendMessage / FileTransfer) on each page of iOS and watchOS.    
 
-1. WCM_AddSubInfo:    
+4. WCM_AddSubInfo:      
+
   - A sample that sends and receives multiple data types with addInfo / subInfo.    
   - Execute various communication methods (ApiContext, UserInfo, SendMessage (w/Reply) and FileTransfer).    
   - Check the compatibility of the sending function and receiving method.    
-  - The data types to be exchanged are Date / String / Int / Double / NSArray / NSDictionary / Data (Small Capacity Icon Data).    
-  - Please check subInfo data acquisition manner with "subInfoDecomp" in the code.    
+  - The data types to be exchanged are Date / String / Int / Double / NSArray / NSDictionary / Data (Small Capacity Icon Data).      
+  - Please check subInfo data acquisition manner with "subInfoDecomp" in the code.      
 
-1. WCM_ConcurrentTransfer:    
+5. WCM_ConcurrentTransfer:      
+
   - This is a demonstration of data transfer in a mixed environment that considers real applications.
-  It is a demo app that simultaneously transfers multiple data (letters, numbers, small capacity image data (icon image), large volume data (photo) in both directions.    
+  It is a demo app that simultaneously transfers multiple data (letters, numbers, small capacity image data (icon image), large volume data (photo) in both directions.      
   - Add "+/-" button to add (or subtract) 1 to the displayed number.Set it to 0 with "RST".
   Simultaneously send random character string, icon image, photo data once.
-  Random data will be sent every 15 seconds with "RND" button.    
-  - By setting the following to the Swift flag (-D) of PROJECT, it is possible to switch between the data transfer type and the presence or absence of File Transfer.    
+  Random data will be sent every 15 seconds with "RND" button.      
+  - By setting the following to the Swift flag (-D) of PROJECT, it is possible to switch between the data transfer type and the presence or absence of File Transfer.      
 
-      - PROJECT WCM_DataTransfer -> Build Setting, Swift Compiler - Custom Flag -> Other Swift Flags    
-      - -DAPL_CONTEXT: AplContext    
-      - -DTRNS_USERINFO: UserInfo    
-      - -DINTRACT_MSG: SendMessage (Simpled)    
-      - none (default): SendMessage (w/Reply)    
-      - -DNO_FILE_TRANSFER: Suppress FileTransfer.    
+    - PROJECT WCM_DataTransfer -> Build Setting, Swift Compiler - Custom Flag -> Other Swift Flags      
+    - -DAPL_CONTEXT: AplContext      
+    - -DTRNS_USERINFO: UserInfo      
+    - -DINTRACT_MSG: SendMessage (Simpled)      
+    - none (default): SendMessage (w/Reply)      
+    - -DNO_FILE_TRANSFER: Suppress FileTransfer.      
 
 
 ![Swift option](./README-Files/01_SwiftOptionFlags.png)
 
 ## Requirements
+
   - WatchConnectManager was developed in Xcode Version 9.4.1.
   - iOS 11.4.1 (iPhone7), 11.4 (iOS simulator) and watchOS 4.3.2 (Series 2), 4.3 (watchOS simulator) were confirmed.
 
