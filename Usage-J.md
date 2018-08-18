@@ -42,11 +42,12 @@
       NSLog("reply: \(replyDict)")
   })
   ```
+
   - 送信ファンクション、AplContext(`"zUpdateApplicationContext"`)と UserInfo(`"zTransferUserInfo"`)は同一フォーマットです。
 SendMessage(`"zSendInteractiveMessage"`)でリプライハンドラーを省略した場合も同一フォーマットになります。
-(WatchConnectManager method listを参照してください)。
-  - 第１引数 "command"は通信識別子です(任意文字列+"$$"、例では"Command$$")。
-  - 第２引数 "addInfo"が転送データ("Any"型配列)です。配列要素として任意の objectを格納します。
+(WatchConnectManager method listを参照してください)。    
+  - 第１引数 "command"は通信識別子です(任意文字列+"$$"、例では"Command$$")。    
+  - 第２引数 "addInfo"が転送データ("Any"型配列)です。配列要素として任意の objectを格納します。    
 
 
 3.  ファイル転送
@@ -55,9 +56,10 @@ SendMessage(`"zSendInteractiveMessage"`)でリプライハンドラーを省略�
   // FileTransfer
   WatchConnectShared.zTransferFile(url, command: "Command$$", addInfo:["NekoIsCat.jpg"])
   ```
-  - Transfer fileでは、`"zTransferFile"`を使用します。
-  - 第１引数は転送するファイルのUrlです。  
-  - command識別子と addInfoの書式はデータ転送に同じです。
+
+  - Transfer fileでは、`"zTransferFile"`を使用します。    
+  - 第１引数は転送するファイルのUrlです。    
+  - command識別子と addInfoの書式はデータ転送に同じです。    
 
 
 4.  UserInfo または FileTransfer 送信完了通知
@@ -86,9 +88,10 @@ SendMessage(`"zSendInteractiveMessage"`)でリプライハンドラーを省略�
         }
       }
   ```
-  - UserInfoと FileTransferでは、(送信側)delageteメソッド(`"receiveUserInfoDidFinish"`/`"receiveFileTransferDidFinish"`)に送信完了が届きます。
-  - "error"が nilでない場合は送信エラーです。error.localizedDescriptionでエラー判定できます。
-  - command識別子と subInfoについては下記を参照ください。
+
+  - UserInfoと FileTransferでは、(送信側)delageteメソッド(`"receiveUserInfoDidFinish"`/`"receiveFileTransferDidFinish"`)に送信完了が届きます。    
+  - "error"が nilでない場合は送信エラーです。error.localizedDescriptionでエラー判定できます。    
+  - command識別子と subInfoについては下記を参照ください。    
 
 ### Receiver (受信側)
 
@@ -142,14 +145,15 @@ SendMessage(`"zSendInteractiveMessage"`)でリプライハンドラーを省略�
     }
   }
   ```
+
   - 送信ファンクションに対応した delageteメソッドでデータを受信します。
-  AplContext(`"receiveApplicationContext"`), UserInfo(`"receiveUserInfo"`), SendMessage(`"receiveInteractiveMessage"`)です。
-  - 受信メソッドの、AplContextと UserInfoは同一フォーマットです。SendMessageでは第４引数にリプライハンドラーが追加されます(省略不可)。
-  - 第１引数 "command" は通信識別子で自分宛データを判定します。異なれば読み飛ばします。例では "Command$$" です。
-  - 第２引数 "timeStamp" には送信時刻が格納されます。
-  - 第３引数 "subInfo" が転送データの実体で、送信 addInfoの配列要素が渡されます。subInfoは辞書型 ([String:Any])です。
+  AplContext(`"receiveApplicationContext"`), UserInfo(`"receiveUserInfo"`), SendMessage(`"receiveInteractiveMessage"`)です。    
+  - 受信メソッドの、AplContextと UserInfoは同一フォーマットです。SendMessageでは第４引数にリプライハンドラーが追加されます(省略不可)。    
+  - 第１引数 "command" は通信識別子で自分宛データを判定します。異なれば読み飛ばします。例では "Command$$" です。    
+  - 第２引数 "timeStamp" には送信時刻が格納されます。    
+  - 第３引数 "subInfo" が転送データの実体で、送信 addInfoの配列要素が渡されます。subInfoは辞書型 ([String:Any])です。    
   keyは command+"配列番号" です。例では "Command$$00"..."Command$$99"となります。上記例では "Command$$00"を keyに、ファイル名をアクセスしています。
-  (subInfoのデータ型のアクセス作法は、デモアプリ WCM_AddSubInfoを参照ください)。
+  (subInfoのデータ型のアクセス作法は、デモアプリ WCM_AddSubInfoを参照ください)。    
 
 
 3.  ファイル転送
@@ -164,11 +168,13 @@ SendMessage(`"zSendInteractiveMessage"`)でリプライハンドラーを省略�
 		 }
 	 }
   ```
-  - 受信メソッドに`"receiveTransferFile"`を使用します。
-	- 第１引数 "fileURL" は受信データファイル Urlです。
+
+  - 受信メソッドに`"receiveTransferFile"`を使用します。    
+	- 第１引数 "fileURL" は受信データファイル Urlです。    
   ただし WatchConnectManagerは受信ファイルを、一時ファイル(tmpディレクトリー)にコピーしています。
-  (fileURLはシステムが受信したオリジナルファイルではありません)。
-  - command識別子、timeStamp、addInfoのフォーマットはデータ転送に同じです。
+  (fileURLはシステムが受信したオリジナルファイルではありません)。    
+  - command識別子、timeStamp、addInfoのフォーマットはデータ転送に同じです。    
+
 
 -----------------------------
 
@@ -177,38 +183,44 @@ SendMessage(`"zSendInteractiveMessage"`)でリプライハンドラーを省略�
 ### Function
 
 #### Sender
-- zUpdateApplicationContext(_ command:String, addInfo:[Any]?) -> Bool
-- zTransferUserInfo(_ command:String, addInfo:[Any]?) -> WCSessionUserInfoTransfer?
-- zSendInteractiveMessage(_ command:String, addInfo:[Any]?, replyHandler: (([String:Any]) -> Void)? = nil , errorHandler: ((Error) -> Void)? = nil)  -> Bool
-- zTransferFile(_ file:URL, command:String, addInfo:[Any]?) -> WCSessionFileTransfer?
+
+- zUpdateApplicationContext(_ command:String, addInfo:[Any]?) -> Bool    
+- zTransferUserInfo(_ command:String, addInfo:[Any]?) -> WCSessionUserInfoTransfer?    
+- zSendInteractiveMessage(_ command:String, addInfo:[Any]?, replyHandler: (([String:Any]) -> Void)? = nil , errorHandler: ((Error) -> Void)? = nil)  -> Bool    
+- zTransferFile(_ file:URL, command:String, addInfo:[Any]?) -> WCSessionFileTransfer?    
 
 #### Misc
-- startSession() -> Bool
-- addWatchConnectManagerDelegate<T>(delegate: T)
-- removeWatchConnectManagerDelegate<T>(delegate: T)
-- hasTransferContentsPending() -> Bool?
-- sessionActivationState() -> WCSessionActivationState?
-- sessionIsReachabie() -> Bool?
-- outstandingUserInfoTransfers() -> [WCSessionUserInfoTransfer]?
-- outstandingFileTransfers() -> [WCSessionFileTransfer]?
+
+- startSession() -> Bool    
+- addWatchConnectManagerDelegate<T>(delegate: T)    
+- removeWatchConnectManagerDelegate<T>(delegate: T)    
+- hasTransferContentsPending() -> Bool?    
+- sessionActivationState() -> WCSessionActivationState?    
+- sessionIsReachabie() -> Bool?    
+- outstandingUserInfoTransfers() -> [WCSessionUserInfoTransfer]?    
+- outstandingFileTransfers() -> [WCSessionFileTransfer]?    
 
 ### Delagate method
 
 #### Receiver
-- receiveApplicationContext(command:String, timeStamp:Date, subInfo:[String:Any])
-- receiveUserInfo(command:String, timeStamp:Date, subInfo:[String:Any])
-- receiveInteractiveMessage(command:String, timeStamp:Date, subInfo:[String:Any], replyHandler: @escaping ([String:Any]) -> Void)
-- receiveTransferFile(fileURL:URL, command:String, timeStamp:Date, subInfo:[String:Any], file: WCSessionFile)
+
+- receiveApplicationContext(command:String, timeStamp:Date, subInfo:[String:Any])    
+- receiveUserInfo(command:String, timeStamp:Date, subInfo:[String:Any])    
+- receiveInteractiveMessage(command:String, timeStamp:Date, subInfo:[String:Any], replyHandler: @escaping ([String:Any]) -> Void)    
+- receiveTransferFile(fileURL:URL, command:String, timeStamp:Date, subInfo:[String:Any], file: WCSessionFile)    
 
 #### Send result
-- receiveUserInfoDidFinish(command:String, timeStamp:Date, subInfo:[String:Any], userInfoTransfer: WCSessionUserInfoTransfer, error: Error?)
-- receiveFileTransferDidFinish(command:String, timeStamp:Date, subInfo:[String:Any], fileTransfer: WCSessionFileTransfer, error: Error?)
+
+- receiveUserInfoDidFinish(command:String, timeStamp:Date, subInfo:[String:Any], userInfoTransfer: WCSessionUserInfoTransfer, error: Error?)    
+- receiveFileTransferDidFinish(command:String, timeStamp:Date, subInfo:[String:Any], fileTransfer: WCSessionFileTransfer, error: Error?)    
 
 
 #### Connectivity status
-- receiveStatusWatchStateDidChange(session : WCSession)     // iOS only
-- receiveStatusReachabilityDidChange(reachability: Bool)
+
+- receiveStatusWatchStateDidChange(session : WCSession)     // iOS only    
+- receiveStatusReachabilityDidChange(reachability: Bool)    
 
 ### Note
-- All delegate methods are options.
-- "sendMessageData" is not supported.
+
+- 全ての Delegateメソッドはオプションです。    
+- "sendMessageData"はサポートしていません。    
