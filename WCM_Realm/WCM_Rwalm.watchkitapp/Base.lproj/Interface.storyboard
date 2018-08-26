@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1Sj-bc-g6h">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="s2x-fq-hgu">
+            <objects>
+                <controller id="1Sj-bc-g6h" customClass="InterfaceController" customModule="WCM_Rwalm_watchkitapp_Extension">
+                    <items>
+                        <label width="1" height="1" alignment="center" verticalAlignment="center" text="Realm data" textAlignment="left" numberOfLines="20" id="nHd-AH-ZfW">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <variation key="device=watch38mm" minimumScaleFactor="1">
+                                <fontDescription key="font" type="system" pointSize="11"/>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <fontDescription key="font" type="system" pointSize="12"/>
+                            </variation>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="nHd-AH-ZfW" id="ABA-GY-MeF"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

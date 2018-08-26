@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1347EAC0986156D0AF6B3B74 /* Pods_WCM_Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66574D8E967201D65855FA0C /* Pods_WCM_Realm.framework */; };
+		3172C9858A6294E94453578A /* Pods_WCM_Rwalm_watchkitapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0A3E5DDF888796A04A9718 /* Pods_WCM_Rwalm_watchkitapp.framework */; };
+		4269C170212F4A1100DE9FF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C16F212F4A1100DE9FF8 /* AppDelegate.swift */; };
+		4269C175212F4A1100DE9FF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4269C173212F4A1100DE9FF8 /* Main.storyboard */; };
+		4269C177212F4A1200DE9FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4269C176212F4A1200DE9FF8 /* Assets.xcassets */; };
+		4269C17A212F4A1200DE9FF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4269C178212F4A1200DE9FF8 /* LaunchScreen.storyboard */; };
+		4269C187212F4A5800DE9FF8 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4269C185212F4A5800DE9FF8 /* Interface.storyboard */; };
+		4269C189212F4A5800DE9FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4269C188212F4A5800DE9FF8 /* Assets.xcassets */; };
+		4269C190212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4269C18F212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4269C195212F4A5800DE9FF8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C194212F4A5800DE9FF8 /* InterfaceController.swift */; };
+		4269C197212F4A5800DE9FF8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C196212F4A5800DE9FF8 /* ExtensionDelegate.swift */; };
+		4269C199212F4A5900DE9FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4269C198212F4A5900DE9FF8 /* Assets.xcassets */; };
+		4269C19D212F4A5900DE9FF8 /* WCM_Rwalm.watchkitapp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4269C183212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp.app */; };
+		4269C1B0212F4CED00DE9FF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C1AF212F4CED00DE9FF8 /* ViewController.swift */; };
+		4269C1BD212F9C2A00DE9FF8 /* SampleRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C1BB212F9C2900DE9FF8 /* SampleRealm.swift */; };
+		4269C1BE212F9C2A00DE9FF8 /* SampleRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C1BB212F9C2900DE9FF8 /* SampleRealm.swift */; };
+		4269C1E32130604700DE9FF8 /* WatchConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C1E22130604600DE9FF8 /* WatchConnectManager.swift */; };
+		4269C1E42130604700DE9FF8 /* WatchConnectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C1E22130604600DE9FF8 /* WatchConnectManager.swift */; };
+		4269C1E62130611E00DE9FF8 /* SupportLibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C1E52130611E00DE9FF8 /* SupportLibs.swift */; };
+		4269C1E72130611E00DE9FF8 /* SupportLibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269C1E52130611E00DE9FF8 /* SupportLibs.swift */; };
+		BF7C9E7E2076249AC68B0276 /* Pods_WCM_Rwalm_watchkitapp_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085361A28468CD79B0462A5A /* Pods_WCM_Rwalm_watchkitapp_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4269C191212F4A5800DE9FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4269C164212F4A1100DE9FF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4269C18E212F4A5800DE9FF8;
+			remoteInfo = "WCM_Rwalm.watchkitapp Extension";
+		};
+		4269C19B212F4A5900DE9FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4269C164212F4A1100DE9FF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4269C182212F4A5800DE9FF8;
+			remoteInfo = WCM_Rwalm.watchkitapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4269C1A1212F4A5900DE9FF8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4269C190212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4269C1A5212F4A5900DE9FF8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4269C19D212F4A5900DE9FF8 /* WCM_Rwalm.watchkitapp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		085361A28468CD79B0462A5A /* Pods_WCM_Rwalm_watchkitapp_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCM_Rwalm_watchkitapp_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25546C5BC54076A4C06B51B9 /* Pods-WCM_Rwalm.watchkitapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCM_Rwalm.watchkitapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCM_Rwalm.watchkitapp/Pods-WCM_Rwalm.watchkitapp.release.xcconfig"; sourceTree = "<group>"; };
+		3562BE233EE6D2E5878BFCB2 /* Pods-WCM_Rwalm.watchkitapp Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCM_Rwalm.watchkitapp Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCM_Rwalm.watchkitapp Extension/Pods-WCM_Rwalm.watchkitapp Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4269C16C212F4A1100DE9FF8 /* WCM_Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCM_Realm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4269C16F212F4A1100DE9FF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4269C174212F4A1100DE9FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4269C176212F4A1200DE9FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4269C179212F4A1200DE9FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4269C17B212F4A1200DE9FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4269C183212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCM_Rwalm.watchkitapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4269C186212F4A5800DE9FF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4269C188212F4A5800DE9FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4269C18A212F4A5800DE9FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4269C18F212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WCM_Rwalm.watchkitapp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4269C194212F4A5800DE9FF8 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4269C196212F4A5800DE9FF8 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4269C198212F4A5900DE9FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4269C19A212F4A5900DE9FF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4269C1AF212F4CED00DE9FF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4269C1B4212F553B00DE9FF8 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4269C1BB212F9C2900DE9FF8 /* SampleRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleRealm.swift; path = "Local Module/SampleRealm.swift"; sourceTree = "<group>"; };
+		4269C1E22130604600DE9FF8 /* WatchConnectManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WatchConnectManager.swift; path = "../Share Module/WatchConnectManager.swift"; sourceTree = "<group>"; };
+		4269C1E52130611E00DE9FF8 /* SupportLibs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SupportLibs.swift; path = "../Share Module/SupportLibs.swift"; sourceTree = "<group>"; };
+		44A230E72136E895FAC0D390 /* Pods-WCM_Rwalm.watchkitapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCM_Rwalm.watchkitapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCM_Rwalm.watchkitapp/Pods-WCM_Rwalm.watchkitapp.debug.xcconfig"; sourceTree = "<group>"; };
+		66574D8E967201D65855FA0C /* Pods_WCM_Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCM_Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67046CA82DB3AA8D787ABD3A /* Pods-WCM_Realm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCM_Realm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCM_Realm/Pods-WCM_Realm.debug.xcconfig"; sourceTree = "<group>"; };
+		CFA060CA0B0E6BA5CED30A9B /* Pods-WCM_Realm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCM_Realm.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCM_Realm/Pods-WCM_Realm.release.xcconfig"; sourceTree = "<group>"; };
+		DB0A3E5DDF888796A04A9718 /* Pods_WCM_Rwalm_watchkitapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WCM_Rwalm_watchkitapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AED5340F5DC274B2B95D9D /* Pods-WCM_Rwalm.watchkitapp Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCM_Rwalm.watchkitapp Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCM_Rwalm.watchkitapp Extension/Pods-WCM_Rwalm.watchkitapp Extension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4269C169212F4A1100DE9FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1347EAC0986156D0AF6B3B74 /* Pods_WCM_Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4269C18C212F4A5800DE9FF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7C9E7E2076249AC68B0276 /* Pods_WCM_Rwalm_watchkitapp_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC440C5B021952F63784DF12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3172C9858A6294E94453578A /* Pods_WCM_Rwalm_watchkitapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DB0DA370D1A975F283602A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66574D8E967201D65855FA0C /* Pods_WCM_Realm.framework */,
+				DB0A3E5DDF888796A04A9718 /* Pods_WCM_Rwalm_watchkitapp.framework */,
+				085361A28468CD79B0462A5A /* Pods_WCM_Rwalm_watchkitapp_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4269C163212F4A1100DE9FF8 = {
+			isa = PBXGroup;
+			children = (
+				4269C1B4212F553B00DE9FF8 /* Podfile */,
+				4269C1E22130604600DE9FF8 /* WatchConnectManager.swift */,
+				4269C1BB212F9C2900DE9FF8 /* SampleRealm.swift */,
+				4269C1E52130611E00DE9FF8 /* SupportLibs.swift */,
+				4269C16E212F4A1100DE9FF8 /* WCM_Realm */,
+				4269C184212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp */,
+				4269C193212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension */,
+				4269C16D212F4A1100DE9FF8 /* Products */,
+				943E4F0316BC559083CA7ACF /* Pods */,
+				1DB0DA370D1A975F283602A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4269C16D212F4A1100DE9FF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4269C16C212F4A1100DE9FF8 /* WCM_Realm.app */,
+				4269C183212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp.app */,
+				4269C18F212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4269C16E212F4A1100DE9FF8 /* WCM_Realm */ = {
+			isa = PBXGroup;
+			children = (
+				4269C16F212F4A1100DE9FF8 /* AppDelegate.swift */,
+				4269C1AF212F4CED00DE9FF8 /* ViewController.swift */,
+				4269C173212F4A1100DE9FF8 /* Main.storyboard */,
+				4269C176212F4A1200DE9FF8 /* Assets.xcassets */,
+				4269C178212F4A1200DE9FF8 /* LaunchScreen.storyboard */,
+				4269C17B212F4A1200DE9FF8 /* Info.plist */,
+			);
+			path = WCM_Realm;
+			sourceTree = "<group>";
+		};
+		4269C184212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp */ = {
+			isa = PBXGroup;
+			children = (
+				4269C185212F4A5800DE9FF8 /* Interface.storyboard */,
+				4269C188212F4A5800DE9FF8 /* Assets.xcassets */,
+				4269C18A212F4A5800DE9FF8 /* Info.plist */,
+			);
+			path = WCM_Rwalm.watchkitapp;
+			sourceTree = "<group>";
+		};
+		4269C193212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4269C194212F4A5800DE9FF8 /* InterfaceController.swift */,
+				4269C196212F4A5800DE9FF8 /* ExtensionDelegate.swift */,
+				4269C198212F4A5900DE9FF8 /* Assets.xcassets */,
+				4269C19A212F4A5900DE9FF8 /* Info.plist */,
+			);
+			path = "WCM_Rwalm.watchkitapp Extension";
+			sourceTree = "<group>";
+		};
+		943E4F0316BC559083CA7ACF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67046CA82DB3AA8D787ABD3A /* Pods-WCM_Realm.debug.xcconfig */,
+				CFA060CA0B0E6BA5CED30A9B /* Pods-WCM_Realm.release.xcconfig */,
+				44A230E72136E895FAC0D390 /* Pods-WCM_Rwalm.watchkitapp.debug.xcconfig */,
+				25546C5BC54076A4C06B51B9 /* Pods-WCM_Rwalm.watchkitapp.release.xcconfig */,
+				E5AED5340F5DC274B2B95D9D /* Pods-WCM_Rwalm.watchkitapp Extension.debug.xcconfig */,
+				3562BE233EE6D2E5878BFCB2 /* Pods-WCM_Rwalm.watchkitapp Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4269C16B212F4A1100DE9FF8 /* WCM_Realm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4269C17E212F4A1200DE9FF8 /* Build configuration list for PBXNativeTarget "WCM_Realm" */;
+			buildPhases = (
+				32058D2A5FC7DB0B28D42B03 /* [CP] Check Pods Manifest.lock */,
+				4269C168212F4A1100DE9FF8 /* Sources */,
+				4269C169212F4A1100DE9FF8 /* Frameworks */,
+				4269C16A212F4A1100DE9FF8 /* Resources */,
+				4269C1A5212F4A5900DE9FF8 /* Embed Watch Content */,
+				2B733A826BF68E41108A148C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4269C19C212F4A5900DE9FF8 /* PBXTargetDependency */,
+			);
+			name = WCM_Realm;
+			productName = WCM_Realm;
+			productReference = 4269C16C212F4A1100DE9FF8 /* WCM_Realm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4269C182212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4269C1A2212F4A5900DE9FF8 /* Build configuration list for PBXNativeTarget "WCM_Rwalm.watchkitapp" */;
+			buildPhases = (
+				B99A596D145DCFDCABDED1B5 /* [CP] Check Pods Manifest.lock */,
+				4269C181212F4A5800DE9FF8 /* Resources */,
+				4269C1A1212F4A5900DE9FF8 /* Embed App Extensions */,
+				FC440C5B021952F63784DF12 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4269C192212F4A5800DE9FF8 /* PBXTargetDependency */,
+			);
+			name = WCM_Rwalm.watchkitapp;
+			productName = WCM_Rwalm.watchkitapp;
+			productReference = 4269C183212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4269C18E212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4269C19E212F4A5900DE9FF8 /* Build configuration list for PBXNativeTarget "WCM_Rwalm.watchkitapp Extension" */;
+			buildPhases = (
+				0D5E2DBB8CF328786CAE383A /* [CP] Check Pods Manifest.lock */,
+				4269C18B212F4A5800DE9FF8 /* Sources */,
+				4269C18C212F4A5800DE9FF8 /* Frameworks */,
+				4269C18D212F4A5800DE9FF8 /* Resources */,
+				69340A915A924E12D71AB732 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WCM_Rwalm.watchkitapp Extension";
+			productName = "WCM_Rwalm.watchkitapp Extension";
+			productReference = 4269C18F212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4269C164212F4A1100DE9FF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Takuji Hori";
+				TargetAttributes = {
+					4269C16B212F4A1100DE9FF8 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4269C182212F4A5800DE9FF8 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4269C18E212F4A5800DE9FF8 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4269C167212F4A1100DE9FF8 /* Build configuration list for PBXProject "WCM_Realm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4269C163212F4A1100DE9FF8;
+			productRefGroup = 4269C16D212F4A1100DE9FF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4269C16B212F4A1100DE9FF8 /* WCM_Realm */,
+				4269C182212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp */,
+				4269C18E212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4269C16A212F4A1100DE9FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4269C17A212F4A1200DE9FF8 /* LaunchScreen.storyboard in Resources */,
+				4269C177212F4A1200DE9FF8 /* Assets.xcassets in Resources */,
+				4269C175212F4A1100DE9FF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4269C181212F4A5800DE9FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4269C189212F4A5800DE9FF8 /* Assets.xcassets in Resources */,
+				4269C187212F4A5800DE9FF8 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4269C18D212F4A5800DE9FF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4269C199212F4A5900DE9FF8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D5E2DBB8CF328786CAE383A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WCM_Rwalm.watchkitapp Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B733A826BF68E41108A148C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WCM_Realm/Pods-WCM_Realm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm-iOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-iOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WCM_Realm/Pods-WCM_Realm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32058D2A5FC7DB0B28D42B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WCM_Realm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69340A915A924E12D71AB732 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WCM_Rwalm.watchkitapp Extension/Pods-WCM_Rwalm.watchkitapp Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm-watchOS/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift-watchOS/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WCM_Rwalm.watchkitapp Extension/Pods-WCM_Rwalm.watchkitapp Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B99A596D145DCFDCABDED1B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WCM_Rwalm.watchkitapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4269C168212F4A1100DE9FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4269C1B0212F4CED00DE9FF8 /* ViewController.swift in Sources */,
+				4269C1E32130604700DE9FF8 /* WatchConnectManager.swift in Sources */,
+				4269C170212F4A1100DE9FF8 /* AppDelegate.swift in Sources */,
+				4269C1BD212F9C2A00DE9FF8 /* SampleRealm.swift in Sources */,
+				4269C1E62130611E00DE9FF8 /* SupportLibs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4269C18B212F4A5800DE9FF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4269C197212F4A5800DE9FF8 /* ExtensionDelegate.swift in Sources */,
+				4269C1E42130604700DE9FF8 /* WatchConnectManager.swift in Sources */,
+				4269C195212F4A5800DE9FF8 /* InterfaceController.swift in Sources */,
+				4269C1BE212F9C2A00DE9FF8 /* SampleRealm.swift in Sources */,
+				4269C1E72130611E00DE9FF8 /* SupportLibs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4269C192212F4A5800DE9FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4269C18E212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp Extension */;
+			targetProxy = 4269C191212F4A5800DE9FF8 /* PBXContainerItemProxy */;
+		};
+		4269C19C212F4A5900DE9FF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4269C182212F4A5800DE9FF8 /* WCM_Rwalm.watchkitapp */;
+			targetProxy = 4269C19B212F4A5900DE9FF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4269C173212F4A1100DE9FF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4269C174212F4A1100DE9FF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4269C178212F4A1200DE9FF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4269C179212F4A1200DE9FF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4269C185212F4A5800DE9FF8 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4269C186212F4A5800DE9FF8 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4269C17C212F4A1200DE9FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4269C17D212F4A1200DE9FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4269C17F212F4A1200DE9FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67046CA82DB3AA8D787ABD3A /* Pods-WCM_Realm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WCM_Realm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AgePro.WCM-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4269C180212F4A1200DE9FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA060CA0B0E6BA5CED30A9B /* Pods-WCM_Realm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WCM_Realm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AgePro.WCM-Realm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4269C19F212F4A5900DE9FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AED5340F5DC274B2B95D9D /* Pods-WCM_Rwalm.watchkitapp Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "WCM_Rwalm.watchkitapp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AgePro.WCM-Realm.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		4269C1A0212F4A5900DE9FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3562BE233EE6D2E5878BFCB2 /* Pods-WCM_Rwalm.watchkitapp Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "WCM_Rwalm.watchkitapp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AgePro.WCM-Realm.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		4269C1A3212F4A5900DE9FF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44A230E72136E895FAC0D390 /* Pods-WCM_Rwalm.watchkitapp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = WCM_Rwalm_watchkitapp_Extension;
+				INFOPLIST_FILE = WCM_Rwalm.watchkitapp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AgePro.WCM-Realm.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		4269C1A4212F4A5900DE9FF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25546C5BC54076A4C06B51B9 /* Pods-WCM_Rwalm.watchkitapp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = WCM_Rwalm_watchkitapp_Extension;
+				INFOPLIST_FILE = WCM_Rwalm.watchkitapp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AgePro.WCM-Realm.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4269C167212F4A1100DE9FF8 /* Build configuration list for PBXProject "WCM_Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4269C17C212F4A1200DE9FF8 /* Debug */,
+				4269C17D212F4A1200DE9FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4269C17E212F4A1200DE9FF8 /* Build configuration list for PBXNativeTarget "WCM_Realm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4269C17F212F4A1200DE9FF8 /* Debug */,
+				4269C180212F4A1200DE9FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4269C19E212F4A5900DE9FF8 /* Build configuration list for PBXNativeTarget "WCM_Rwalm.watchkitapp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4269C19F212F4A5900DE9FF8 /* Debug */,
+				4269C1A0212F4A5900DE9FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4269C1A2212F4A5900DE9FF8 /* Build configuration list for PBXNativeTarget "WCM_Rwalm.watchkitapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4269C1A3212F4A5900DE9FF8 /* Debug */,
+				4269C1A4212F4A5900DE9FF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4269C164212F4A1100DE9FF8 /* Project object */;
+}

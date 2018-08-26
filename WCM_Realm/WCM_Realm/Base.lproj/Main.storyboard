@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Rw-GZ-yGZ">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rC2-Ix-Kt6">
+            <objects>
+                <viewController id="2Rw-GZ-yGZ" customClass="ViewController" customModule="WCM_Realm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uNI-Ka-MSi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOu-YF-V2o">
+                                <rect key="frame" x="16" y="338" width="382" height="60"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VYt-2T-H7i"/>
+                                </constraints>
+                                <state key="normal" title="send Realm">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendButtonAct:" destination="2Rw-GZ-yGZ" eventType="touchUpInside" id="R8Q-uj-sRs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akL-85-Cmg">
+                                <rect key="frame" x="16" y="217.66666666666666" width="382" height="59.999999999999972"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="lET-gC-eUG"/>
+                                </constraints>
+                                <state key="normal" title="make Data">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="makeButtonAct:" destination="2Rw-GZ-yGZ" eventType="touchUpInside" id="qg6-iY-CQV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XOu-YF-V2o" firstAttribute="centerX" secondItem="uNI-Ka-MSi" secondAttribute="centerX" id="0vh-nf-9Zz"/>
+                            <constraint firstItem="XOu-YF-V2o" firstAttribute="centerY" secondItem="uNI-Ka-MSi" secondAttribute="centerY" id="6CS-lV-Z5o"/>
+                            <constraint firstItem="XOu-YF-V2o" firstAttribute="height" secondItem="akL-85-Cmg" secondAttribute="height" id="8cV-W0-gFa"/>
+                            <constraint firstItem="yyY-eP-m9d" firstAttribute="trailing" secondItem="XOu-YF-V2o" secondAttribute="trailing" constant="16" id="Sak-31-99r"/>
+                            <constraint firstItem="XOu-YF-V2o" firstAttribute="top" secondItem="akL-85-Cmg" secondAttribute="bottom" constant="60" id="UIQ-IY-uaU"/>
+                            <constraint firstItem="yyY-eP-m9d" firstAttribute="trailing" secondItem="akL-85-Cmg" secondAttribute="trailing" constant="16" id="VMn-TM-fR8"/>
+                            <constraint firstItem="XOu-YF-V2o" firstAttribute="centerX" secondItem="uNI-Ka-MSi" secondAttribute="centerX" id="VUQ-vX-OPr"/>
+                            <constraint firstItem="akL-85-Cmg" firstAttribute="centerX" secondItem="uNI-Ka-MSi" secondAttribute="centerX" id="XLH-yb-Lh3"/>
+                            <constraint firstItem="XOu-YF-V2o" firstAttribute="centerY" secondItem="uNI-Ka-MSi" secondAttribute="centerY" id="dpS-hB-B55"/>
+                            <constraint firstItem="XOu-YF-V2o" firstAttribute="top" secondItem="akL-85-Cmg" secondAttribute="bottom" constant="60" id="iUI-v8-2TM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yyY-eP-m9d"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cY7-fL-6x1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="-90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>
