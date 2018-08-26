@@ -69,6 +69,8 @@ fastlane/test_output
 
 ####### Ignores
 WCM_Icons
+ZZZZZZZ
+B01_WCM_Sample
 B02_WCM_ConcurrentTransferRx
 B03_WCM_TinyBG
-ZZZZZZZ
+B0*_WCM*

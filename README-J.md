@@ -137,29 +137,29 @@ class InterfaceController: WKInterfaceController, WatchConnectManagerDelegate {
   このため deinit{}や didDeactivate()での "removeWatchConnectManagerDelegate"は不要のようです。
 
 ## デモプロジェクト
-5種のサンプルを準備しました。Break point等で挙動とデータをご確認ください。
+6種のサンプルを準備しました。Break point等で挙動とデータをご確認ください。
 
 1. WCM_TinySample:    
   - Exampleのコードです。単方向(iOS -> watchOS)通信の最小限の実装です。　    
   - AplContextと TransferFileを行います。    
 
-1. WCM_TinySample2:    
+2. WCM_TinySample2:    
   - WCM_TinySampleの逆方向です。単方向(watchOS- > iOS)通信です。　    
   - SendMessage(w/Reply)と TransferFileを行います。    
   - SendMessageによる iOSバックグラウンド起動のテスト用です。    
 
-1. WCM_MultiViewController:    
+3. WCM_MultiViewController:    
   -  Multiple Delegates (MulticastDelegates)テスト用です。    
   - iOSとwatchOSの各ページで、各種通信手段 (AplContext/UserInfo/SendMessage/FileTransfer) を行います。    
 
-1. WCM_AddSubInfo:    
+4. WCM_AddSubInfo:    
   - 複数のデータ型を addInfo/subInfoで授受するサンプルです。    
   - 各種通信手段(AplContext, UserInfo, SendMessage(w/Reply), FileTransfer)を実行します。    
   - 送信ファンクションと受信メソッドの互換性をご確認ください。    
   - 交換するデータ種は、Date, String, Int, Double, NSArray, NSDictionary, Data(小容量アイコンデータ)です。    
   - コードの "subInfoDecomp"で subInfoデータ取得作法をご確認ください。    
 
-1. WCM_ConcurrentTransfer:    
+5. WCM_ConcurrentTransfer:    
 	- 実アプリを意識した、混在環境でのデータ転送のデモです。複数のデータ(文字, 数字, 小容量画像データ(アイコンイメージ)、大容量データ(写真)を同時双方向で転送するデモアプリです。    
 	- "＋/-" ボタンで表示数字に１加算/減算します。"RST"で0にします。同時にランダムな文字列、アイコンイメージ、写真データを一回送信します。"RND"ボタンで15秒ごとにランダムデータを送信します。    
 	- PROJECTの Swiftフラグ(-D)に下記設定を行うことで、データ転送種類とFileTransferの有無が切り替えられます。    
@@ -172,6 +172,15 @@ class InterfaceController: WKInterfaceController, WatchConnectManagerDelegate {
       - -DNO_FILE_TRANSFER: FileTransfer抑止    
 
 ![Swift option](./README-Files/01_SwiftOptionFlags.png)
+
+6. WCM_Realm:    
+  - Realm file転送のコードです。単方向(iOS -> watchOS)の実装です。　    
+  - エラー対応などは、コメントアウト行を参照ください。      
+  - WCM_Realmは "RealmSwift"を使用します(名前のとおり)。このサンプルでは、podを使用して Realmをインストールしてください。　　
+     - $ cd WCM_Realm     
+     - $ pod install     
+
+
 
 ## 環境
   - WatchConnectManagerは Xcode Version 9.4.1.で開発しました。
@@ -186,16 +195,16 @@ class InterfaceController: WKInterfaceController, WatchConnectManagerDelegate {
 [NatashaTheRobot / WatchConnectivitySingletonDemo.swift](https://gist.github.com/NatashaTheRobot/6bcbe79afd7e9572edf6)    
 I was inspired by this Gist.    
 
-1. Multiple Delegates    
+2. Multiple Delegates    
 [Multicast Delegates in Swift](http://www.gregread.com/2016/02/23/multicast-delegates-in-swift/)    
 [Multicast Delegate and Delegates Composition](http://www.vadimbulavin.com/multicast-delegate/)    
 [NSHashTableでDelegatesパターン](https://www.slideshare.net/jstarfruits/nshashtabledelegates)    
 
-1. Code (Apple's sample)    
+3. Code (Apple's sample)    
 [QuickSwitch: Supporting Quick Watch Switching with WatchConnectivity](https://developer.apple.com/library/archive/samplecode/QuickSwitch/Introduction/Intro.html)    
 [SimpleWatchConnectivity: Using the Watch Connectivity API](https://developer.apple.com/library/archive/samplecode/SimpleWatchConnectivity/Introduction/Intro.html#//apple_ref/doc/uid/TP40017663-Intro-DontLinkElementID_2)    
 
-1. Illustration / photo image    
+4. Illustration / photo image    
 [かわいいフリー素材集 いらすとや](https://www.irasutoya.com)    
 [Satoshi村 著作権フリーの写真](http://satoshi3.sakura.ne.jp/f_photo/f_photo.htm)    
 

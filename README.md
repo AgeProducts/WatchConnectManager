@@ -142,7 +142,7 @@ class InterfaceController: WKInterfaceController, WatchConnectManagerDelegate {
 
 ## Demo Project
 
-We prepared 5 kinds of samples. Please check the behavior and data with Break point etc.
+We prepared 6 kinds of samples. Please check the behavior and data with Break point etc.
 
 1. WCM_TinySample:      
 
@@ -187,6 +187,13 @@ We prepared 5 kinds of samples. Please check the behavior and data with Break po
 
 ![Swift option](./README-Files/01_SwiftOptionFlags.png)
 
+6. WCM_Realm:
+  - Realm file Transfer code. Unidirectional (iOS -> watchOS) implementation.  
+  - For error handling etc, refer to the comment out line.
+  - WCM_Realm uses "RealmSwift" (as the name suggests). For this sample, please install Realm with pod.
+    - $ cd WCM_Realm
+    - $ pod install
+
 ## Requirements
 
   - WatchConnectManager was developed in Xcode Version 9.4.1.
@@ -196,20 +203,20 @@ We prepared 5 kinds of samples. Please check the behavior and data with Break po
 
 Thanks for sharing knowledge and resources.
 
-1. Initial proc. and session handling / 初期処理とセッション操作    
+1. Initial proc. and session handling    
 [NatashaTheRobot / WatchConnectivitySingletonDemo.swift](https://gist.github.com/NatashaTheRobot/6bcbe79afd7e9572edf6)    
 I was inspired by this Gist.
 
-1. Multiple Delegates    
+2. Multiple Delegates    
 [Multicast Delegates in Swift](http://www.gregread.com/2016/02/23/multicast-delegates-in-swift/)
 [Multicast Delegate and Delegates Composition](http://www.vadimbulavin.com/multicast-delegate/)    
 [NSHashTableでDelegatesパターン](https://www.slideshare.net/jstarfruits/nshashtabledelegates)    
 
-1. Code (Apple's sample)    
+3. Code (Apple's sample)    
 [QuickSwitch: Supporting Quick Watch Switching with WatchConnectivity](https://developer.apple.com/library/archive/samplecode/QuickSwitch/Introduction/Intro.html)    
 [SimpleWatchConnectivity: Using the Watch Connectivity API](https://developer.apple.com/library/archive/samplecode/SimpleWatchConnectivity/Introduction/Intro.html#//apple_ref/doc/uid/TP40017663-Intro-DontLinkElementID_2)    
 
-1. Illustration / photo image    
+4. Illustration / photo image    
 [かわいいフリー素材集 いらすとや](https://www.irasutoya.com)     
 [Satoshi村 著作権フリーの写真](http://satoshi3.sakura.ne.jp/f_photo/f_photo.htm)    
 

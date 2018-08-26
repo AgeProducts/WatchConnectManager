@@ -165,7 +165,7 @@ If you omit the reply handler with SendMessage (`"zSendInteractiveMessage"`), it
 	 	if command == "Command$$" {
 		    let fileName = subInfo["Command$$00"] as! String
         let path = fileURL.path
-			  // ファイル操作
+			  // File handling
 		 }
 	 }
   ```
